@@ -1,0 +1,54 @@
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	font-size: 20px;
+	color: black;
+	word-break:break-word;
+}
+
+/****包含时****/
+html,body{
+	height: 100%;
+}
+.middle{
+	width: 400px;
+	height: 200px;
+	background-color: lightgray;
+	position: relative;
+	top: 50%;
+	transform:translateY(-50%);
+	-webkit-transform:transformY(-50%);
+	-moz-transform:transformY(-50%);
+	-ms-transform:transformY(-50%);
+	margin:0 auto;/*设置margin自动的时候，只能实现水平居中*/
+	text-align: center;;
+}
+.middle p{
+	padding: 20px;
+	position: relative;
+	top: 50%;
+	transform:translateY(-50%);
+	-webkit-transform:transformY(-50%);
+	-moz-transform:transformY(-50%);
+	-ms-transform:transformY(-50%);
+}
+.leftInside{
+	width: 50px;
+	height: 50px;
+	border-bottom-right-radius: 50px;
+	background-color: orange;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.rightInside{
+	width: 50px;
+	height: 50px;
+	border-top-left-radius: 50px;
+	background-color: orange;
+	position: absolute;
+	right:0;
+	bottom:0;
+}
